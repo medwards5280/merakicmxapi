@@ -121,7 +121,7 @@ require 'digest/sha1'
 
 # zip content when possible
 use Rack::Deflater
-
+set :protection, :except => :frame_options
 # ---- Parse command-line arguments ----
 
 if ARGV.size < 2
